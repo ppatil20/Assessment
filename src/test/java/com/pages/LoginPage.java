@@ -32,6 +32,9 @@ public class LoginPage {
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Ayaansh Patil')]")
 	public WebElement userSignedIn;
 	
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Sign out')]")
+	public WebElement userSignedOut;
+	
 	//Constructor
 	public LoginPage(WebDriver driver)
 	{
@@ -69,5 +72,11 @@ public class LoginPage {
 	public void accountCreated()
 	{
 		userSignedIn.getText();
+	}
+	
+	//Click User Signed Out
+	public void userSignedOut()
+	{
+		userSignedOut.click();
 	}
 }

@@ -52,15 +52,17 @@ public class CreateAccountTestCases extends baseClass {
 		createAccountPageObj.enterConfirmPassword("Password@1234");
 		createAccountPageObj.checkKeepMeSignedIn();
 		createAccountPageObj.checkTermsandConditions();
+		//Unable to automate Google Captcha for create account
 		createAccountPageObj.registerNotRobot();
-		
+		Thread.sleep(7000);
 		//Register user with above details
-		createAccountPageObj.clickCreateAccount();
-		
+		createAccountPageObj.createAnAccount();
+		Thread.sleep(5000);
 		//Verify user is successfully registered with above values in respective fields
 		Assert.assertEquals(createAccountPageObj.userSignedIn.getText(), "Pallavi Patil");
+		createAccountPageObj.userSignedOut();
+		Thread.sleep(5000);
 		
-//		Thread.sleep(3000);
 	}
 
 }

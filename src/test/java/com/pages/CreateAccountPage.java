@@ -23,7 +23,7 @@ public class CreateAccountPage extends baseClass{
 	@FindBy(how = How.XPATH, using = "//*[text() = 'Sign in']")
 	public WebElement singInLink;
 	
-	@FindBy(how = How.XPATH, using = "//*[text(),'Create account')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Create account')]")
 	public WebElement createAccountLink;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='title']")
@@ -53,12 +53,14 @@ public class CreateAccountPage extends baseClass{
 	@FindBy(how = How.XPATH, using = "//input[@id='recaptcha-anchor-label']")
 	public WebElement registerNotRobot;
 	
-	@FindBy(how = How.XPATH, using = "//*[text(),'Create account')]")
-	public WebElement createAccountButton;
+	@FindBy(how = How.XPATH, using = "//*[text(),'Create an account')]")
+	public WebElement createAnAccountButton;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Pallavi Patil')]")
 	public WebElement userSignedIn;
 	
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Sign out')]")
+	public WebElement userSignedOut;
 	
 	//Constructor
 	public CreateAccountPage(WebDriver driver)
@@ -142,14 +144,22 @@ public class CreateAccountPage extends baseClass{
 		}
 		
 	//Click Create Account button
-		public void createAccount()
+		public void createAnAccount()
 		{
-			createAccountButton.click();
+			createAnAccountButton.click();
 		}
 		
 	//Click User Signed In
 		public void accountCreated()
 		{
 			userSignedIn.getText();
+		}
+		
+	//Click User Signed Out
+	    public void userSignedOut()
+		{
+			userSignedOut.click();
 		}		
+		
+		
 }

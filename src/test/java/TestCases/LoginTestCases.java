@@ -46,8 +46,10 @@ LoginPage LoginPageObj;
 		LoginPageObj.clickSignInbutton();
 		
 		//Verify user is successfully registered with above values in respective fields
+		Thread.sleep(5000);
 		Assert.assertEquals(LoginPageObj.userSignedIn.getText(), "Ayaansh Patil");
 		
-//		Thread.sleep(3000);
+		LoginPageObj.userSignedOut();
+		Thread.sleep(5000);
 	}
 }
