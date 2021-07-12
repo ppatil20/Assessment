@@ -1,5 +1,5 @@
 /**
- *This class mainly is created to write the test scripts for testcases 
+ *This class mainly is created to write the test scripts for testcases related to Create Account page
  *TestNG is used for running the testcases and reporting 
  */
 /**
