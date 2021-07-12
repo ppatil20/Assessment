@@ -1,5 +1,6 @@
 /**
- * 
+ *This class mainly is created to write the test scripts for testcases 
+ *TestNG is used for running the testcases and reporting 
  */
 /**
  * @author patil_pa
@@ -10,7 +11,6 @@ package TestCases;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.baseClass.baseClass;
 import com.pages.CreateAccountPage;
 
