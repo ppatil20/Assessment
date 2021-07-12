@@ -25,6 +25,18 @@ public class CreateAccountPage extends baseClass{
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Create account')]")
 	public WebElement createAccountLink;
+	
+	@FindBy(how = How.XPATH, using = "//header/div[3]/div[1]/a[1]/img[1]")
+	public WebElement economistLogo;	
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='keywords']")
+	public WebElement searchKeywords;
+	
+	@FindBy(how = How.XPATH, using = "//input[@id='location']")
+	public WebElement searchLocation;
+	
+	@FindBy(how = How.XPATH, using = "//form[1]/fieldset[1]/div[4]/div[1]/input[1]")
+	public WebElement searchButton;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='title']")
 	public WebElement registerTitle;
@@ -76,9 +88,38 @@ public class CreateAccountPage extends baseClass{
 	}
 	
 	//Navigates to CreateAccount/Registration page
-		public void clickCreateAccount() 
+		public void clickCreateAccountLink() 
 		{		
 			createAccountLink.click();				
+		}
+		
+	//Navigates to CreateAccount/Registration page
+		public void clickTheEconomistLogo()
+		{		
+			economistLogo.click();				
+		}		
+		
+	//Enter Keywords in Jobs Search page	
+		public void enterSearchKeywords(String Keyword)
+		{
+			
+			searchKeywords.clear();
+			searchKeywords.sendKeys(Keyword);
+		}
+		
+	//Enter Keywords in Jobs Search page
+		public void enterSearchLocation(String Location)
+		{
+			
+			searchLocation.clear();
+			searchLocation.sendKeys(Location);
+		}
+		
+	//Enter Keywords in Jobs Search page	
+		public void clickSearch()
+		{
+			
+			searchButton.click();
 		}
 		
 	//Enter Title of user in registration page	

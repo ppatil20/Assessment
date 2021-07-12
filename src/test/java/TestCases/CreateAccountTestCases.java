@@ -18,7 +18,8 @@ public class CreateAccountTestCases extends baseClass {
 	
 	CreateAccountPage createAccountPageObj;
 	
-	//Creation of method
+//	Creation of method
+//	Navigation to "The Economist Jobs" page
 	public void OpenUrl()
 	{
 	 driver.get("https://jobs.economist.com/");	
@@ -26,18 +27,48 @@ public class CreateAccountTestCases extends baseClass {
 	
 	
 	@Test
+//	Testcase to verify navigation on clicking "Create Account" link
 	public void VerifySignInLink() throws InterruptedException
 	{
 		OpenUrl();
 		createAccountPageObj = PageFactory.initElements(driver, CreateAccountPage.class);
-		createAccountPageObj.clickCreateAccount();
-		//Verify user is navigated to expected url passed as second parameter below
+		createAccountPageObj.clickCreateAccountLink();
+//		Verify user is navigated to expected url passed as second parameter below
 		Assert.assertEquals(driver.getCurrentUrl(), "https://jobs.economist.com/register/");
-//		Thread.sleep(5000);
+		Thread.sleep(5000);
 	}
 	
-
+	
 	@Test
+//	Testcase to verify navigation on clicking "The Economist" logo
+	public void VerifyTheEconomist() throws InterruptedException
+	{
+		OpenUrl();
+		createAccountPageObj = PageFactory.initElements(driver, CreateAccountPage.class);
+		createAccountPageObj.clickTheEconomistLogo();
+		//Verify user is navigated to expected url passed as second parameter below
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.economist.com/");
+		Thread.sleep(5000);
+	}
+	
+	
+	@Test
+//	Testcase to verify search on Jobs page
+	public void VerifySearchJobs() throws InterruptedException
+	{
+		OpenUrl();
+		createAccountPageObj = PageFactory.initElements(driver, CreateAccountPage.class);
+		createAccountPageObj.enterSearchKeywords("Lead");
+		createAccountPageObj.enterSearchLocation("India (IN)");
+		createAccountPageObj.clickSearch();
+		//Verify user is navigated to expected url passed as second parameter below
+		Assert.assertEquals(driver.getCurrentUrl(), "https://jobs.economist.com/searchjobs/?LocationId=73&keywords=lead&radialtown=India+(IN)&radiallocation=5&countrycode=GB");
+		Thread.sleep(5000);
+	}
+	
+	
+	@Test
+//	Testcase to verify Create Account/Register User
 	public void CreateAccountwithValidData() throws InterruptedException
 	{
 		OpenUrl();

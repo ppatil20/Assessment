@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28269" started-at="2021-07-12T01:02:45 IST" finished-at="2021-07-12T01:03:14 IST">
+  <suite name="Default suite" duration-ms="48487" started-at="2021-07-12T16:54:21 IST" finished-at="2021-07-12T16:55:09 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28269" started-at="2021-07-12T01:02:45 IST" finished-at="2021-07-12T01:03:14 IST">
+    <test name="Default test" duration-ms="48487" started-at="2021-07-12T16:54:21 IST" finished-at="2021-07-12T16:55:09 IST">
       <class name="TestCases.CreateAccountTestCases">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="setUp" is-config="true" duration-ms="3430" started-at="2021-07-12T01:02:45 IST" finished-at="2021-07-12T01:02:49 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="setUp" is-config="true" duration-ms="2968" started-at="2021-07-12T16:54:21 IST" finished-at="2021-07-12T16:54:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="CreateAccountwithValidData()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="CreateAccountwithValidData" duration-ms="21879" started-at="2021-07-12T01:02:49 IST" finished-at="2021-07-12T01:03:11 IST">
+        <test-method status="FAIL" signature="CreateAccountwithValidData()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="CreateAccountwithValidData" duration-ms="20233" started-at="2021-07-12T16:54:24 IST" finished-at="2021-07-12T16:54:44 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='recaptcha-anchor-label']"}
@@ -20,8 +20,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'XOR-BAN-246', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\patil_pa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66e3ba7f0a3156b0870e849713196b6f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\patil_pa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1887b66a23c01776d237c0bc0c16ef7b
 *** Element info: {Using=xpath, value=//input[@id='recaptcha-anchor-label']}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'XOR-BAN-246', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\patil_pa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66e3ba7f0a3156b0870e849713196b6f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\patil_pa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1887b66a23c01776d237c0bc0c16ef7b
 *** Element info: {Using=xpath, value=//input[@id='recaptcha-anchor-label']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -51,8 +51,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.pages.CreateAccountPage.registerNotRobot(CreateAccountPage.java:143)
-at TestCases.CreateAccountTestCases.CreateAccountwithValidData(CreateAccountTestCases.java:55)
+at com.pages.CreateAccountPage.registerNotRobot(CreateAccountPage.java:184)
+at TestCases.CreateAccountTestCases.CreateAccountwithValidData(CreateAccountTestCases.java:87)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,11 +87,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateAccountwithValidData -->
-        <test-method status="PASS" signature="VerifySignInLink()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="VerifySignInLink" duration-ms="2036" started-at="2021-07-12T01:03:11 IST" finished-at="2021-07-12T01:03:13 IST">
+        <test-method status="PASS" signature="VerifySearchJobs()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="VerifySearchJobs" duration-ms="7349" started-at="2021-07-12T16:54:44 IST" finished-at="2021-07-12T16:54:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchJobs -->
+        <test-method status="PASS" signature="VerifySignInLink()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="VerifySignInLink" duration-ms="6425" started-at="2021-07-12T16:54:51 IST" finished-at="2021-07-12T16:54:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifySignInLink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="closeBrowser" is-config="true" duration-ms="842" started-at="2021-07-12T01:03:13 IST" finished-at="2021-07-12T01:03:14 IST">
+        <test-method status="PASS" signature="VerifyTheEconomist()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="VerifyTheEconomist" duration-ms="10639" started-at="2021-07-12T16:54:58 IST" finished-at="2021-07-12T16:55:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTheEconomist -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestCases.CreateAccountTestCases@2d8f65a4]" name="closeBrowser" is-config="true" duration-ms="835" started-at="2021-07-12T16:55:08 IST" finished-at="2021-07-12T16:55:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
